@@ -144,7 +144,7 @@ const EmployeeList = (props) => {
                   {employee.image ? (
                     <div className='imgContainer'>
                       <img
-                      src={`mern-project-admin-api.vercel.app/uploads/${employee.image}`} // Assuming uploads directory is accessible at the root
+                      src={`http://localhost:3000/uploads/${employee.image}`} // Assuming uploads directory is accessible at the root
                       alt={employee.name}
                       // style={{ maxWidth: '100px', maxHeight:'4rem' }}
                     />
