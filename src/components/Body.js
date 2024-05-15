@@ -9,7 +9,7 @@ import CreateEmployee from './CreateEmployee';
 import EditEmployeeList from './EditEmployeeList';
 import axios from 'axios';
 const api = axios.create({
-  baseURL: `/`
+  baseURL: `http://localhost:3000`
 })
 
 const AppLayout = () =>{
