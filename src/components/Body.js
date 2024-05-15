@@ -24,7 +24,7 @@ const AppLayout = () =>{
 const appRouter = createBrowserRouter([
   {
     path:"/",
-    element:<Login />,
+    element:<Login api={api} />,
   },
   {
     path:"/",

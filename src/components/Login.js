@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import "../style/style.css";
 
-const Login = () => {
+const Login = (props) => {
+    const {api} = props;
     const [loginData, setLoginData] = useState([]);
     const navigate = useNavigate()
     const changeEvent = (e) =>{
@@ -17,7 +18,7 @@ const Login = () => {
     const submitEvent = async(e) => {
         e.preventDefault()
         try {
-            const response = await axios.post("http://localhost:3000/admin/login", loginData);
+            const response = await api.post("/admin/login", loginData);
             console.log(response, response.data, response.status);
             if (response.status === 200) {
                 console.log(response.data.token);
