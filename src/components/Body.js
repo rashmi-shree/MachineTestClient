@@ -10,7 +10,7 @@ import EditEmployeeList from './EditEmployeeList';
 import axios from 'axios';
 const api = axios.create({
   // baseURL: `http://localhost:3000`,
-  baseURL: `https://machine-test-server.vercel.app/`
+  baseURL: `https://machine-test-server.vercel.app`
 })
 
 const AppLayout = () =>{
