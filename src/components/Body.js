@@ -8,6 +8,8 @@ import EmployeeList from './EmployeeList';
 import CreateEmployee from './CreateEmployee';
 import EditEmployeeList from './EditEmployeeList';
 import axios from 'axios';
+import "../style/style.css";
+
 const api = axios.create({
   // baseURL: `http://localhost:3000`,
   baseURL: `https://machine-test-server.vercel.app`
